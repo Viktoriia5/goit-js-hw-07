@@ -30,7 +30,7 @@ function createBoxes(amount) {
 
   let boxSize = 30;
   for (let i = 1; i <= amount; i++) {
-    divItem = `<div style = 'width: ${boxSize}px; height: ${boxSize}px; background: ${getRandomHexColor()}'></div>`;
+    let divItem = `<div style = 'width: ${boxSize}px; height: ${boxSize}px; background: ${getRandomHexColor()}'></div>`;
     newDiv.insertAdjacentHTML("beforeend", divItem);
     boxSize += 10;
   }
