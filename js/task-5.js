@@ -1,7 +1,7 @@
-let btnSubmit = document.querySelector('.change-color');
+let btnSubmit = document.querySelector(".change-color");
 
-btnSubmit.addEventListener('click', handleChangeColor);
-let widgetBody = document.querySelector('body');
+btnSubmit.addEventListener("click", handleChangeColor);
+let widgetBody = document.querySelector("body");
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -10,8 +10,9 @@ function getRandomHexColor() {
 }
 
 function handleChangeColor(event) {
-  console.log('widget');
-  let widgetSpan = document.querySelector('.color');
-  widgetBody.style.backgroundColor = getRandomHexColor();
-  widgetSpan.innerHTML = getRandomHexColor();
+  console.log("widget");
+  let color = getRandomHexColor();
+  let widgetSpan = document.querySelector(".color");
+  widgetBody.style.backgroundColor = color;
+  widgetSpan.innerHTML = color;
 }
